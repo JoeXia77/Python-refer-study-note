@@ -1,0 +1,23 @@
+
+methods to delete element in a dictionary:
+
+1. if you want to delete anything: del it
+del table['targetKey']
+
+
+2. use pop() method in dict
+table.pop('targetKey')   
+## to interact with a dictionary, pop('targetKey') need to locate to somewhere because dict do not have a sequence
+
+
+
+
+
+
+
+
+
+
+
+
+

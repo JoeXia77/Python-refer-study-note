@@ -1,0 +1,43 @@
+## how to build a model using tf.keras:
+## 1. choose model type
+## 2. add layers
+## 3. config model
+
+import tensorflow as tf
+
+## choose the model type
+model = tf.keras.Sequential()
+
+## add layers
+model = tf.keras.Sequential(
+[layer1,layer2,layer3]
+)
+layer1 = tf.layers.Flatten(input_shape = (a,b))
+layer2 = tf.layers.Dense(128)
+layer3 = tf.layers.Dense(10)
+
+
+## specify loss function in model.compile()
+
+## model.compile(loss = tf.keras.losses.lossFunctionName)
+
+## while task is classification, can use SparseCategoricalCrossentropy as loss function
+>>> y_true = [1, 2] ## true label, batch size = 2
+>>> y_pred = [[0.05, 0.95, 0], [0.1, 0.8, 0.1]] ## possi of each labels, batch size = 2
+## The shape of y_true is [batch_size] and the shape of y_pred is [batch_size, num_classes].
+
+lossFunction = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
+
+## example:
+model.compile(optimizer='adam',
+              loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
+              metrics=['accuracy'])
+
+
+
+
+
+
+
+
+

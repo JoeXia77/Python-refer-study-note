@@ -1,0 +1,24 @@
+
+## aim: transfer other data type to int type
+## aim2: identify number in 16 base, 8 base and in 2 base. then convert them into 10 base
+
+int(target, base) 
+
+int('010101', 2)
+>>> 21
+
+
+int('aa', 16)
+>>>170
+
+
+## 32 bit int
+## the first bit is sign, in whick 0 is positive
+
+## the maximun is int('01111111111111111111111111111111' , base = 2) == 2147483647
+
+## the minimum is int('10000000000000000000000000000000' , base = 2) == 2147483648
+
+
+
+

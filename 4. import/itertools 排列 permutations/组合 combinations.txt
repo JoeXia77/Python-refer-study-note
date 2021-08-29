@@ -1,0 +1,5 @@
+from itertools import combinations
+
+a = combinations([1,2,3],2)
+
+list(a) == [(1, 2), (1, 3), (2, 3)]

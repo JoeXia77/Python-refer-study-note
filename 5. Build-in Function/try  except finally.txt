@@ -1,0 +1,24 @@
+try:
+   ......
+except:
+   ......
+
+最常见的 try-except, 首先尝试执行 try 子句, 如果没有错误, 忽略所有的 except 从句继续执行，如果发生异常, 解释器将在这一串处理器(except 子句)中查找匹配的异常。
+
+简单用法（except后面不跟特定异常，这会捕获所有异常）这种好处就是你不知道会发生什么异常，尽管用；坏处就是当异常发生时候，不能清楚了解到底发生哪种异常。
+
+我们可以发现，连接没有成功，但程序是正常运行的，会继续往下运行如果没有try，程序则会中断报错。我们发现第一个print并没有运行，这是因为try 语句块中异常发生点后的剩余语句永远不会到达(所以也永远不会执行)。
+
+
+
+
+try:
+  x > 3
+except:
+  print("Something went wrong")
+else:
+  print("Nothing went wrong")
+finally:
+  print("The try...except block is finished")
+## The finally block will always be executed, no matter if the try block raises an error or not:
+

@@ -1,0 +1,40 @@
+
+
+Recursion needs imagination.
+
+The first step: Function return what? (any reasonable idea lead to a useable return)
+
+The second step: Simplify the problem by one step. (make it closer to reach the final solution)
+
+The third step: what if this function reached the final step? It will then use the base case.
+		what if it haven't reached the final step? Try to decrease its scale.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

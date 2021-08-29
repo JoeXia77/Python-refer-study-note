@@ -1,0 +1,2 @@
+>>>print('y = %fx + %f'%(float(reg.coef_),float(reg.intercept_)))
+y = 0.605263x + 0.263158

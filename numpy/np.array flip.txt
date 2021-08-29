@@ -1,0 +1,18 @@
+
+
+np.flip(targetMatrix, axis)
+
+Flip an array vertically (axis=0).
+Flip an array horizontally (axis=1).
+
+
+
+
+
+
+
+
+
+
+
+

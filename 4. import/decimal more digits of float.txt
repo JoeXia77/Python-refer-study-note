@@ -1,0 +1,27 @@
+
+## can expand the digits of a float number
+##  decimal.Decimal(number) will create an long digit number
+
+import decimal
+
+## decide length of digits
+work_context = decimal.getcontext()
+work_context.prec = 100
+
+## operations:
+a = decimal.Decimal(5.5)   or  decimal.Decimal('5.5') 
+
+a+3 == Decimal('8.5')
+
+a**2
+
+## calculate sqrt()
+a.sqrt()
+
+
+
+
+
+
+
+

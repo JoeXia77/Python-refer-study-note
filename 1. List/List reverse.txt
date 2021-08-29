@@ -1,0 +1,13 @@
+
+Aim: modify the current list, the list will be reversed, the last item now at the first.
+Method: 
+list1 = list
+list1.reverse()
+
+
+
+
+
+
+
+

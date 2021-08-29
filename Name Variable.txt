@@ -1,0 +1,14 @@
+
+
+
+greeting_message
+
+use _ as a space, for space is not allowed in variable name.
+
+
+name_length
+name should be short but descriptibe enough.
+
+
+
+

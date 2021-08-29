@@ -1,0 +1,7 @@
+
+import pandas as pd
+pd.DataFrame(data, rowname, columnname).head()
+
+
+
+

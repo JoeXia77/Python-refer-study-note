@@ -1,0 +1,40 @@
+
+from collections import Counter
+
+## initialization
+counter = Counter(list)
+
+## convert to list    
+## .elements() is a iterTool that generate a chain
+list(counter.elements())
+
+## get most common elements:
+c.most_common(topN)
+## example:
+c.most_common(2)
+-->[('a', 4), ('b', 2)]
+
+## plus two counter together  (or submission also works)
+c = Counter(a=3, b=1)  ## exact the correct format to use Counter: Counter(apple=4 , pear = 1)
+d = Counter(a=1, b=2)
+c + d                      
+--> Counter({'a': 4, 'b': 3})
+
+## check if c1 cover c2: use c1 - c2 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+len('banana')
+
+fruit='banana'
+length = len(fruit)
+last = fruit[length-1]
+
+
+The expression fruit[-1] yields the last letter, fruit[-2] yields the
+second to last

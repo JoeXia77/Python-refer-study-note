@@ -1,0 +1,19 @@
+
+add up some column of an np.array
+
+
+
+np.sum(targetArray, axis = howManyAxisToKeep)
+
+sum1 = np.sum(cha, axis = 2)
+
+
+
+
+
+
+
+
+
+
+

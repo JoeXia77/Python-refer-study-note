@@ -1,0 +1,30 @@
+
+## method 1, use PIL to modify image
+## how to read and modify a picture
+## need PIL and numpy
+from PIL import Image
+import numpy as np
+
+# use np.asarray() to read an PIL.Image object
+I = np.asarray(Image.open('./pic.jpg'))
+
+## after modifying: change the object to img object by Image.fromarray()
+img = Image.fromarray(np.uint8(I))
+
+## save this image object using img.save('pathName')
+img.save('n.png')
+
+
+## method 2 , use numpy to change image
+import numpy as np
+from skimage.io import imread, imshow
+
+image = imread('/content/3-0.jpg')
+imshow(image)
+
+
+
+
+
+
+

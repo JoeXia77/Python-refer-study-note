@@ -1,0 +1,17 @@
+
+
+## useage1:
+## if there is a block of elements, where each element have some relation with each other, you can use dfs to find them all. 
+## method: use a visited list to contain the result, and use recursion to traverse all possibilities.
+
+
+
+
+
+
+
+
+
+
+
+

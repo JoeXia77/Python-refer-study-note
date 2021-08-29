@@ -1,0 +1,38 @@
+
+## bin(i) : transfer integer to binary format
+## if you want n digit of binary number, i should in 2**n and 2**(n+1)
+
+generate the following sequence:
+000
+001
+010
+011
+100
+101
+110
+111
+
+it is like a constant binary format
+
+Steps:
+first: generate the following for position aligning
+1000
+1001
+1010
+1011
+1100
+1101
+1110
+1111
+when delete the first number
+
+example:
+for i in range(8,16):
+	print(bin(i)[3:])
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+
+
+example:
+
+list1.index(target)
+--> 5
+
+
+
+
+
+

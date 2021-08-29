@@ -1,0 +1,40 @@
+import math
+
+math.sqrt(5)
+>>>
+2.23606797749979
+
+## get pi
+a = math.pi
+## get e:
+b = math.e
+
+degrees: convert radians to degrees
+>>> math.degrees(math.pi)
+180.0
+
+cosine: input the radians and output the cos value
+math.cos(math.pi)
+
+
+power:   pow(x,y) == x**y
+>>> math.pow(4,5)
+1024.0
+>>> math.pow(4,0.5)
+2.0
+
+
+## cal n!, factorial of n
+math.factorial(n)
+
+## log
+a = math.log(target, base)
+## example:
+math.log(8,2) == 3
+
+
+## round up, ceil
+math.ceil(2.3) --> 3
+
+
+

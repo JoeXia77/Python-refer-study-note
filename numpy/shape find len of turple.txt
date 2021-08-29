@@ -1,0 +1,18 @@
+
+## find the shape of an matrix
+## find out the range of a,b,c when matrix[a][b][c]
+np.shape(matrix)
+
+
+
+
+
+
+array = img.reshape(img.shape[0]*img.shape[1],3)
+
+
+
+
+
+
+

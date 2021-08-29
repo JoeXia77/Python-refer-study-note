@@ -1,0 +1,8 @@
+想要在特定时候报错，使用raise 错误类型（原因）
+如：raise ValueError('17 is a bad number')
+
+def inputNumber():
+    x = input ('input a number')
+    if x == '17' :
+        raise ValueError('17 is a bad number')
+    return x

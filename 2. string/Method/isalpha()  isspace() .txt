@@ -1,0 +1,30 @@
+Aim: to decide if a string is consisted of pure numbers or pure alphabets or space ... 
+
+method:
+1. Check if all is alphabet
+string.isalpha()         ##return True or Flase
+2. Check if all is number
+.isdigit()
+3. Check if all is space   which is like this: '        '
+.isspace()
+
+
+
+
+
+
+
+
+else:
+
+1. 如果字符串至少有一个字符并且所有字符都是字母或数字  isalnum()
+2. 如果字符串中只包含数字字符 isnumeric()
+3. 所有(区分大小写的)字符都是小写  islower()
+4. 所有(区分大小写的)字符都是大写  isupper()
+5. 如果字符串是标题化的  istitle()
+
+
+
+
+
+

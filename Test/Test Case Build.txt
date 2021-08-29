@@ -1,0 +1,32 @@
+
+
+1. import unittest and the function you want to test: 
+for example: 
+	import unittest
+	from name_function import get_formatted_name
+
+
+2. make a testcase class to inherit from unittest.TestCase
+for example:
+	class NamesTestCase(unittest.TestCase):
+
+
+3. write several methods to check each aspect of performance
+	and the method which start with    test_   will 	automatically run when we run this  ***.py
+
+
+
+
+4. in the method, we may need to use the function like assert.
+
+
+5. add unittest.main() in the bottom
+	this will tell python to run all the test when this  ***.py runs
+
+
+
+
+
+
+
+

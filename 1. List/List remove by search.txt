@@ -1,0 +1,14 @@
+
+Aim£º remove a specific element in a list
+method: List1.remove(elementValue)
+
+List1.remove('apple')     ## it will remove the (first) 'apple' in the list
+
+
+
+
+
+
+
+
+

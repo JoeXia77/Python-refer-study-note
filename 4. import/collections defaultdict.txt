@@ -1,0 +1,36 @@
+
+from collections import defaultdict
+
+## table = defaultdict(defaultDataType)
+## this act the same as dictionary in python.  
+## the convenience is: if s.th not in table, table[s.th] will not return error but return an default value you set when create this value
+## this defaultDataType could be list, set, string
+
+## example:
+from collections import defaultdict
+table = defaultdict(list)
+
+table[1]
+--> []
+
+table[1].append(5)
+table[1]
+--> [5]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+
+
+
+when you write the file directionary. 
+The raw string format is needed:
+
+print('Hi\nHello')
+>>>
+Hi
+Hello
+
+
+print(r'Hi\nHello')
+>>>
+Hi\nHello
+
+the same for directory:
+file1 = open(  r'D:\test.txt'  )

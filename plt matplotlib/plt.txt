@@ -1,0 +1,54 @@
+
+import matplotlib.pyplot as plt
+
+x
+y
+
+## make a layer for drawing
+plt.figure()
+
+## draw a line
+plt.plot(x,y)   
+
+## draw a scatter
+plt.scatter(x,y)
+
+## if do not use plt.subplots, all the lines will present in one picture
+## if want to show several pictures:
+## define an subplot: 
+## pyplot.subplot(int,                      int,                          index)
+## pyplot.subplot(howManyRows, howManyColumns, what is my Index when I am a picture)
+## example:
+for i in range(25):
+	# define a subplot
+	pyplot.subplot(5,5,i+1)
+	## put this pic on the plot
+	pyplot.imshow(trainX[i])
+## ref
+https://matplotlib.org/gallery/subplots_axes_and_figures/axes_margins.html#sphx-glr-gallery-subplots-axes-and-figures-axes-margins-py
+
+
+## subplot:
+fig, axes = plt.subplots(nrows=2.ncols =2)
+## use axes to represent which subplot we want to modify, for example: 
+axes[0,0].plot(x, y)
+axs[1, 1].scatter(x, y)
+
+## add comment, or annotate
+axes.annotate(comment,position)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

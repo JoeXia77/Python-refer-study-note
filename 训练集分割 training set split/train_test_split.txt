@@ -1,0 +1,35 @@
+
+
+a1,a2,b1,b2 = train_test_split(a, b, test_size=0.3)
+
+##将a划分成两部分  a ---> a1, a2     b---> b1, b2, 划分的比例是将0.3分划出来给a2
+
+
+test_size = 0.1
+or
+test_size = 200
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

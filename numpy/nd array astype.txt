@@ -1,0 +1,13 @@
+
+
+## change data type of elements in an exising np array
+arr = arr.astype(int)
+arr = arr.astype(float)
+
+
+
+
+
+
+
+

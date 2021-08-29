@@ -1,0 +1,13 @@
+和用户的交互中，如果输入不符合要求需要让客户重新输入。
+
+这是一个branch+loop的过程
+
+判断用户输入是否符合要求，不符合则print一行提示，继续loop这个input指令
+符合则更改loop判定的状态位，结束这个输入循环。
+
+
+inputState = False
+while inputState == False:
+    if 输入符合要求:
+        inputState= True
+    else: print('请输入。。。。')

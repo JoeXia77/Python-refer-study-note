@@ -1,0 +1,25 @@
+
+前提：
+for each in targetString
+
+判断是不是数字：
+each.isdigit()== true or flase
+
+判断是不是字母：
+each.isalpha()
+
+判断是不是空格：
+each == ' '
+
+
+
+
+
+
+
+
+
+
+
+
+

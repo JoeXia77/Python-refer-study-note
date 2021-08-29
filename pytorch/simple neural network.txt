@@ -1,0 +1,96 @@
+
+## a sample neural network:
+## First import proper library
+## will import torch.nn for layers like nn.Conv2d(input_channel, output_channel, filter_size)
+## will import torch.nn.finctional as F for functions like F.relu(), F.maxpool2d(input, kernel_size)
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+## second initialize layers with proper hyper parameter
+## design the network structure:
+## which layer to use one after one
+## what should the channel number be of conv layer
+
+
+## Third use an forward function to transfer input to each layer in sequence
+## the input size in pytorch should be four demential: [batch_size, channel, row, column]
+
+
+## note: Between conv layer and dense layer, we should flat the output of conv
+## 	and use the flated vector as input for dense layer
+## but, the batch size should be kept, so:
+## 	we flat it using:  x = x.view(-1, self.num_flat_features(x))
+## 	leaving the first position of batch size automatically determined, 
+## 	and count the (channel, row, column) together using:   "def num_flat_features(self, x):" below
+
+class Net(nn.Module):
+
+    def __init__(self):
+        super(Net, self).__init__()
+        # 1 input image channel, 6 output channels, 3x3 square convolution
+        # kernel
+        self.conv1 = nn.Conv2d(1, 6, 3)
+        self.conv2 = nn.Conv2d(6, 16, 3)
+        # an affine operation: y = Wx + b
+        self.fc1 = nn.Linear(16 * 6 * 6, 120)  # 6*6 from image dimension
+        self.fc2 = nn.Linear(120, 84)
+        self.fc3 = nn.Linear(84, 10)
+
+    def forward(self, x):
+        # Max pooling over a (2, 2) window
+        x = F.max_pool2d(F.relu(self.conv1(x)), (2, 2))
+        # If the size is a square you can only specify a single number
+        x = F.max_pool2d(F.relu(self.conv2(x)), 2)
+        x = x.view(-1, self.num_flat_features(x))
+        x = F.relu(self.fc1(x))
+        x = F.relu(self.fc2(x))
+        x = self.fc3(x)
+        return x
+
+    def num_flat_features(self, x):
+        size = x.size()[1:]  # all dimensions except the batch dimension
+        num_features = 1
+        for s in size:
+            num_features *= s
+        return num_features
+
+
+net = Net()
+print(net)
+
+
+## get an loss function(ignored)
+
+## use loss.backward() to get grad for all parameters
+## Note, before use backward, usually set all previous grad to zero, using:
+## net.zero_grad()    where net is our network object
+
+## example: 
+net.zero_grad()    
+loss.backward()
+
+
+## Update weights: using optimizer:
+import torch.optim as optim
+# 1. create your optimizer, .parameters() is an default attribute by torch model
+optimizer = optim.SGD(net.parameters(), lr=0.01)
+
+# 2. writing the training block using optim
+optimizer.zero_grad()   # zero the gradient buffers
+output = net(input)  # get loss function
+loss = criterion(output, target)
+loss.backward()  # loss.backward()
+optimizer.step()    # Does the update
+
+
+
+
+
+
+
+
+
+
+
+

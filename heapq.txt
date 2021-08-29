@@ -1,0 +1,53 @@
+
+
+## if we want a priority queue, 
+## function: 1. always know the smallest value. 2. can add new items at small cost (lgn time) 
+
+import heapq 
+
+## init:  heapq is contained in a list [] , where heap[k] <= heap[2*k+1] and heap[k] <= heap[2*k+2] for all k,
+heap = []
+
+## functions:
+## heapq.heappush(heap,item)
+heapq.heappush(heap, 3)
+
+## heapq.heappop(heap)
+same
+
+## heapq.heapify(heap)  ## will just sort elements in heap using O(n)
+heap = [7, 6, 5, 4, 3, 2]
+heapq.heapify(heap)
+print(heap)
+-->[2, 3, 5, 4, 6, 7]
+
+
+## merge multiple sorted iterables into one iterable
+from heapq import merge
+## merge(iterableA, B, C, ...)
+## example:
+a = [1,4,6]
+b = [2,3,6]
+c = [3,4,5]
+list(merge(a,b,c))
+-->[1, 2, 3, 3, 4, 4, 5, 6, 6]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

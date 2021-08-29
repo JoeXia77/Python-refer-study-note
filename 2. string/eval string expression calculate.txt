@@ -1,0 +1,23 @@
+
+
+## a string expression like this:  "(1+(4+5+2)-3)+(6+8)"
+## aim: calculate it and return its answer
+## method: eval()         ## will return expression value
+eval( "(1+(4+5+2)-3)+(6+8)")
+--> 23
+eval('pow(2,2)')
+--> 4
+
+n=81
+eval("n + 4")
+--> 85
+
+
+
+
+
+
+
+
+
+

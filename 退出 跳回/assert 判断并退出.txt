@@ -1,0 +1,12 @@
+assert:
+Aim: verify the output matchs the expection.
+	if mismatch, break and return eooromessage
+
+example:
+x=5
+assert x == 4, 'x should equal to 4'
+
+此时会退出程序并报错
+
+another example:
+assert ctr <= 100, '循环的次数超过100次'

@@ -1,0 +1,61 @@
+import random
+
+random.random() will get a float between 0 and 1
+
+## choose from a list
+random.choice(list)   
+
+## get a randint
+random.randint(1,99)  ## inclusive, will give 1 and 99
+
+## get a random float:
+random.uniform(1.1,5.8)
+
+
+import random
+
+## choose from a list: random.choice(list)
+## convert an string to a list: list(str)
+## 高斯分布随机试验 一万次会比较稳定
+## apple = []
+apple = list('apple')
+randTime = 1000
+table = {}
+
+for i in range(randTime):
+    char = random.choice(apple)
+    if char in table:
+        table[char]+=1
+    else:
+        table[char] = 1
+    
+for char in table:
+    p = table[char]/randTime
+    print(f'Possibility of {char}: {p}')
+
+
+## random order: random.shuffle(x):
+x = [x for x in range(10)]
+random.shuffle(x)
+## x has changed 
+
+## random matrix
+
+np.random.randomint(startNum, endNum, size = (rows, columns))
+
+np.random.randint(0,255,size =(10,9))
+
+array([[248,  68,  13, 111,  37, 137, 187,   2, 163],
+       [165,  35, 235, 182,   4,  67, 178,  91, 237],
+       [111, 216, 218, 249, 168,  95,  57, 186, 103],
+       [203,  70, 132, 166, 198,  27, 157,  12,  51],
+       [ 31,  49, 228, 175, 202,  76, 229,  68, 202],
+       [147, 161, 148, 154, 250,  60,  27,  87, 113],
+       [ 14,  42, 182,  65, 249, 152,  32, 103, 232],
+       [149,  63, 152, 250,  77,  27, 141,  41, 211],
+       [ 87, 174, 144,  27,  55, 247, 237,  58, 176],
+       [133,  75,  47,   0,  24,  36,  54,  47,  73]])
+
+
+
+

@@ -1,0 +1,26 @@
+
+three ways to copy:
+1.  a= b
+
+2. a = b.copy()
+
+3. 
+import copy 
+a = copy.deepcopy(b) 
+
+difference:
+a = b : a, b reference to the same element
+a = b.copy() : a get all the first layer element in b, but only reference elements in the first layer
+a = copy.deepcopy(b): a and b are totally disconnected 
+
+deepcopy is useful in complex data format
+import copy
+newList = copy.deepcopy(oldList) 
+
+
+
+
+
+
+
+

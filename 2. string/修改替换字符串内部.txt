@@ -1,0 +1,18 @@
+replace
+
+Aim: find a target and replace it with a new one.
+return: the origional string will now be modified!
+	but the replace method will return the modified value.
+
+
+a = a.replace('s','k')    ## a == 'asdf'  ----> a == 'akdf'
+
+L[0] == 'a\n'
+L[0] = L[0].replace("\n","")
+L[0] == 'a'
+
+
+
+
+
+

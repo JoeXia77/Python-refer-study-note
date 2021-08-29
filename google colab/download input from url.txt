@@ -1,0 +1,57 @@
+
+
+## aim: to download an file from url to google colab
+## procedure:  1. have a url that if click, a download file will pop up
+
+import urllib.request
+urllib.request.urlretrieve(url_for_file,   'name_it.txt')
+
+
+
+## more complex version:
+## check if exist in google colab, if not, download it:
+
+import os.path
+import urllib.request
+
+if os.path.exists(fileName):
+	pass
+else:
+	urllib.request.urlretrieve(url, 'String_of_file_name')
+
+
+
+
+## method 2 , use wget: 
+!wget --no-check-certificate url_to_download -O ./output_name
+
+example: 
+!wget --no-check-certificate \
+    https://raw.githubusercontent.com/aisutd/Intro-to-NLP-pretrained/main/word_embedding_models/data/sample_corpus_essay_Bach_Nguyen.txt -O ./sample_corpus.txt
+
+
+
+## download from github: 
+
+change from:
+https://github.com/                          aisutd/Intro-to-NLP-pretrained/blob/main/word_embedding_models/data/shakespeare.txt
+
+to:
+https://raw.githubusercontent.com/aisutd/Intro-to-NLP-pretrained/         main/word_embedding_models/data/shakespeare.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

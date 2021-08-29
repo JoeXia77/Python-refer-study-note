@@ -1,0 +1,36 @@
+Ways to create a dictionary:
+
+## First, start with the empty dictionary and add elements. (The empty dictionary is denoted {})
+>>> eng2sp = {}
+>>> eng2sp[¡¯one¡¯] = ¡¯uno¡¯
+>>> eng2sp[¡¯two¡¯] = ¡¯dos¡¯
+
+## Second way, just write it
+>>> eng2sp = {¡¯one¡¯: ¡¯uno¡¯, ¡¯two¡¯: ¡¯dos¡¯, ¡¯three¡¯: ¡¯tres¡¯}
+
+## Third: used a paired format as input, which is (1,2), (3,4)...
+## then construct by {x:y for x,y in aPairedDataFormat}
+example:
+a = [(1,2),(3,4),(5,6)]
+table = {x:y for x,y in a}
+or
+table = dict(a)
+
+## construct a paired format:
+b = zip(List1,List2)
+
+## thus, way to construct a table is :
+myTable = dict(zip(List1,List2))
+
+
+fibonacci function easy version
+fib={0:0,1:1}
+def gf(x):
+    if x in fib:
+        return fib[x]
+    else:
+        fib[x]=gf(x-1)+gf(x-2)
+        return fib[x]
+
+## if equal:
+dictA == dictB if their contents are the same

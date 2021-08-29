@@ -1,0 +1,43 @@
+
+## to achieve the indexList for cross validaton  
+## trainData[indexList1] is the traindata already splited and trainData[indexList2] is the testData 
+
+## 1. import:
+from sklearn.model_selection import KFold
+
+## 2. instantiation KFold() --> kfold
+## example:
+kfold = KFold()
+or
+kfold = KFold(n_folds, shuffle=True, random_state=1)
+
+## 3. use kfold.split(trainX or trainY) --> [[index_list_for_train, index_list_for_test] , [index_list_for_train, index_list_for_test],...]
+## example:
+a = kfold.split(dataX) 
+
+
+## 4. trainX[index_list_for_train] --> pick up 48000 training pictures
+## example:
+for indexList1, indexList2 in a:
+	cur_trainX = trainX[indexList1]
+	cur_testX = trainX[indexList2]
+	model.fit(cur_trainX , trainY[indexList1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

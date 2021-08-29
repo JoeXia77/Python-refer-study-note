@@ -1,0 +1,29 @@
+## save a model to a file:
+
+import pickle
+
+with open('hw4.pickle', 'wb') as f:
+  pickle.dump(model, f)
+
+from google.colab import files
+files.download('hw4.pickle')
+
+
+
+
+## load model from file:
+from google.colab import files
+import pickle
+
+uploaded_files = files.upload()
+f = list(uploaded_files.values())[0]
+model = pickle.loads(f)
+
+
+
+
+
+
+
+
+

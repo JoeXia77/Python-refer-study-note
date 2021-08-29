@@ -1,0 +1,13 @@
+import numpy as np
+from sklearn.linear_model import LinearRegression
+X = np.array([[-2],[1],[3]])
+y = np.array([[-1],[1],[2]])
+reg = LinearRegression().fit(X, y)
+
+>>> reg.score(X, y)  相似度 similarity
+0.9943609022556391
+>>> reg.coef_           k  --  coeffective == 系数
+array([[0.60526316]])
+>>> reg.intercept_    b  --  intercept == 截距
+array([0.26315789])
+>>> reg.predict(5)

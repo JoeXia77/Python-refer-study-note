@@ -1,0 +1,81 @@
+
+## Aim: np.array --> file:
+## np.save('file_path', data)
+
+np.save('drive/My Drive/train_data.npy', train_data)
+
+
+
+## Aim: load data
+t = np.load('drive/My Drive/train_data.npy')
+## t is ndarray
+t.shape --> (60000, 1, 28, 28)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+####  ***** not important the following ***** ####
+
+## introduction: method of np.savetxt() for 1D array and 2D array in a human readable format
+
+
+## Aim: have an np array, save it into file:
+## method: np.savetxt('file_address', data, delimiter=',')
+## example:
+
+from numpy import savetxt
+
+## choose your data to save
+data = np.array([[0, 1, 2, 3, 4, 5, 6, 7, 8, 9],[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]])
+
+## choose destination
+savetxt('drive/My Drive/data.csv', data, delimiter=',')
+	
+	## Note:
+	## principle: will transformat np.array into string
+	## use '\n' (next line) to split rows, use ',' to split items in a row
+
+	## note, this can only store 1D array and 2D array for the reason of the principle mentioned before
+
+## Aim: load text from file:
+## method: np.loadtxt('file_address', delimiter=',')
+## example:
+
+from numpy import loadtxt
+
+data = loadtxt('data.csv', delimiter=',')
+
+type(data) == 'numpy.ndarray'
+
+
+
+
+
+
+
+
+
+
+
+
+
+

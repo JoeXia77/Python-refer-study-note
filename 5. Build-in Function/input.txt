@@ -1,0 +1,10 @@
+
+
+## aim: let the user input s.th, it will be regard as string and save in a variable
+a = input("say to your user what to type")
+
+
+
+
+
+

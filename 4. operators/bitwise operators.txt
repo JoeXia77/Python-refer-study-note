@@ -1,0 +1,28 @@
+
+## key word:  'and'  and  '&' 
+## they both have the meaning of and, but :
+## '&' is bitwise and, means : 0000000 & 1011100 ==> 1011100
+## 'and' is logical and so it takes 0000000  as 0 and takes 1011100 as 1 then do this and operation
+
+
+## other bitwise operators:
+& Binary AND
+ |  Binary OR	
+^ Binary XOR
+
+## shift position, or say *2
+a = a << 2;      
+
+## shift position, or say //2
+c = a >> 2
+
+## flip each digit
+c = ~a
+60 --> -61   ## because the negative int is natually bigger one when the binary format coincide
+
+
+
+
+
+
+

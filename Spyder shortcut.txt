@@ -1,0 +1,15 @@
+
+find a function by its name: ctrl + alt + p
+
+type a matrix: ctrl + m
+
+
+
+
+
+
+
+
+
+
+

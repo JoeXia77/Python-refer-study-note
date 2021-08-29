@@ -1,0 +1,31 @@
+
+
+## a defaultdict() is similar to dict()
+## the only difference is it will not raise any key error, instead, it will call and return a function your previously set.
+
+from collections import defaultdict
+my_dict = defaultdict(my_function)
+
+def my_function():
+	return []
+
+## so we can also use build in functions like list() str()
+## example:
+from collections import defaultdict
+my_dict = defaultdict(list)
+my_dict2 = defaultdict(str)
+
+my_dict['any key not exist'] = []
+my_dict2['any key not exist'] = ""
+
+
+
+
+
+
+
+
+
+
+
+

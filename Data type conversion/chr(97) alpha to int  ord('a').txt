@@ -1,0 +1,49 @@
+
+## chr(int) will return a charactor in ASCII table
+
+## example:
+
+for i in range(97,123):
+	print(chr(i))
+
+>>>
+a
+b
+c
+d
+e
+f
+g
+h
+i
+j
+k
+l
+m
+n
+o
+p
+q
+r
+s
+t
+u
+v
+w
+x
+y
+z
+
+## chr(256) is the max range. it contains index of 0~255 
+
+## convert charactor into id
+ord('a')
+-->97
+
+
+
+
+
+
+
+

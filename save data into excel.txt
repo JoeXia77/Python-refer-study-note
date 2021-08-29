@@ -1,0 +1,14 @@
+
+
+
+
+## suppose we have a record = [ contents, contents2] to be exported into excel
+## we can use panda dataframe 
+## example:
+
+import pandas as pd
+
+df = pd.DataFrame(record)
+writer = pd.ExcelWriter('test.xlsx', engine='xlsxwriter')
+df.to_excel(writer, sheet_name='welcome', index=False)
+writer.save()

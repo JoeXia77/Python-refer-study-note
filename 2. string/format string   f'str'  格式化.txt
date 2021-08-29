@@ -1,0 +1,12 @@
+Aim: let a lot of variables showed in a string.
+
+
+put   f    in front of the string.
+use   {}   to show which is the variable
+
+
+>>> name = 'Runoob'
+>>> f'Hello {name}'  # лФ╩╩╠Да©
+
+
+

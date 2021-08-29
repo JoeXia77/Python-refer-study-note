@@ -1,0 +1,21 @@
+
+compare two float number:
+
+1. 
+0.1 + 0.2 != 0.3
+
+
+2. but:
+math.isclose(0.1+0.2,0.3) == True
+
+
+
+
+
+
+
+
+
+
+
+

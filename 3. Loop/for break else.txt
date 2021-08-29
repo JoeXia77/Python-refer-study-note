@@ -1,0 +1,28 @@
+
+for break else:
+
+## Example:
+for i in range(10):
+    if i>5:
+        print("break")
+        break
+else:
+    print("ok")
+
+
+if break never triggered:
+	all the content will be excuted including else, else is a part of for loop.
+
+if break triggered:
+	the rest of the loop as well as the else contents will be skipped.
+
+
+
+
+
+
+
+
+
+
+

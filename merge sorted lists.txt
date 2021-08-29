@@ -1,0 +1,19 @@
+
+## merge multiple sorted iterables into one iterable
+from heapq import merge
+## merge(iterableA, B, C, ...)
+## example:
+a = [1,4,6]
+b = [2,3,6]
+c = [3,4,5]
+list(merge(a,b,c))
+-->[1, 2, 3, 3, 4, 4, 5, 6, 6]
+
+
+
+
+
+
+
+
+

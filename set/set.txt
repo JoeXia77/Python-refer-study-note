@@ -1,0 +1,44 @@
+
+1. the principle of set is like hash map.
+so judge if x in set is O(1)
+
+## initialize:
+a = set()     ## if use a = {}, a hash map will be built.
+or 
+a = {1,2,3,4,5}
+
+setA = {1,2,3,4,5}
+setB = {2,3,4,5,6}
+
+## adding new items into the set
+setA.add(3)
+
+## difference
+>>>setA-setB
+Out: {1}
+
+## union
+or: setA | setB
+
+## intersection
+and: setA & setB  ## bitwise and is essential
+
+## pop() 
+## can get a number from the set using pop()
+setA.pop()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

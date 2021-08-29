@@ -1,0 +1,4 @@
+
+## abs() is a build in function of python, use it directly.
+abs(-2) == 2
+

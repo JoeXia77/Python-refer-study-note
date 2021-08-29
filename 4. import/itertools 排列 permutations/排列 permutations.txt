@@ -1,0 +1,10 @@
+from itertools import permutations
+
+a = permutation([1,2,3])
+
+list(a) = [(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 1, 2), (3, 2, 1)]
+
+type(a) == itertools.permutations  ## can not be used directly, need to convert by list(a)A
+
+
+

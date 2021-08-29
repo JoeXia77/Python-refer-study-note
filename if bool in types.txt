@@ -1,0 +1,24 @@
+
+
+
+## some other data type can use as bool, like int, str, list...
+if 0: == False
+if 1: == True
+
+if '': == False
+if 'a': == True
+
+if []: == False
+if [1]: == True
+
+
+
+
+
+
+
+
+
+
+
+

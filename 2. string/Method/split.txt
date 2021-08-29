@@ -1,0 +1,25 @@
+
+Aim1: to split a string, give back a list including parts of the strings.
+
+song = "The rain in Spain..."
+song.split()
+>>>
+['The', 'rain', 'in', 'Spain...']
+
+
+Aim2: deleting the annoying charactor in the origional string.
+song.split('ai')
+>>>
+['The r', 'n in Sp', 'n...']
+
+
+## split only once:
+split(spliter, 1)
+
+## exapmle:
+'asdf 123 234'.split(' ',1)
+
+
+
+
+

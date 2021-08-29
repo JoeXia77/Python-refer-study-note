@@ -1,0 +1,21 @@
+
+
+Aim: judge if an element is in a list or not in a list(or used to judge a string). Ruturn True or False
+
+Method: 
+'apple' in ['apple','banana']
+>>> True
+
+'a' in 'apple'
+>>> True
+
+not in
+
+'a' not in 'apple'
+>>> Flase
+
+
+
+
+
+

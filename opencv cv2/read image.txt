@@ -1,0 +1,6 @@
+import cv2
+import numpy as np # read images as numpy arrays
+
+
+gray_image2 = cv2.imread('lenna.bmp', cv2.IMREAD_GRAYSCALE)
+gray_image3 = cv2.imread('lenna.bmp', cv2.IMREAD_UNCHANGED)

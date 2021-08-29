@@ -1,0 +1,13 @@
+
+
+## create a new txt file: just open it with a new name:
+new_file = open('new_name.txt',"w",encoding = "utf-8")
+
+## add content to this new file:
+## use new_file.write(content), and close it to save changes
+new_file.write('content')
+new_file.close()
+
+## read content from txt file:
+## 1.new_file.readline()
+## 2. to read all content, use: new_file.read()

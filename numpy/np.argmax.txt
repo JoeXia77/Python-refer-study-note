@@ -1,0 +1,40 @@
+
+## aim: return the index of the max number in a list  (or many indexes in each row of a matrix)
+
+## method: 
+1. return the max in a flat list:
+
+a = [3,2,1]
+np.argmax(a)
+--> 0
+
+2. return one max index in an matrix:
+np.argmax(matrix)
+--> 5 
+	## explain: it will flat the matrix and give index
+
+3. return one max index in each row:
+a = array( [ [10, 11, 12] , [13, 14, 15] ] )
+np.argmax(a, axis=1)
+--> array([2, 2])
+
+4. return max in each column:
+np.argmax(a, axis=0)
+--> array([1, 1, 1])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+## aim: when want to manipulate at the beginging of an array, use double ended queue based on linked list
+
+
+## preparation: 
+from collections import deque
+
+## initialize:
+myLList = deque(anythingInterable)
+## ex:
+llist = deque([1,2,3,4,5])
+
+## principle:
+the methods are similar with a list
+
+## methods:
+## the most useful methods are pop() and append(), no matter on the end or the start
+
+llist.append(6)  ## will append 6 on the right(end)
+llist.appendleft(0)  ## will append 0 on the left(begining)
+llist.pop()  ## remove and return the element on the right
+llist.popleft()  ## remove and return the element on the left
+		## extend()  and extendleft()
+
+## find length
+len(llist)
+
+## find index of a certain number:
+llist.index(targetNumber, startPointOfFinding, endPoint)
+
+## remove and del also useable
+llist.remove(value)
+del llist[index]
+
+## count how many times a specific value shows up
+llist.count(targetValue)
+
+
+
+
+
+
+
+
+
+

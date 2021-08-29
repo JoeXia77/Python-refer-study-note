@@ -1,0 +1,40 @@
+
+## create a new txt file: just open it with a new name:
+new_file = open('new_name.txt',"w",encoding = "utf-8")
+
+## add content to this new file:
+## use new_file.write(content), and close it to save changes
+new_file.write('content')
+new_file.close()
+
+## read content from txt file:
+## 1.new_file.readline()
+## 2. to read all content, use: new_file.read()
+
+
+
+
+## exaple:
+## read content from file
+source = open("The old man and the sea.txt",encoding = 'utf-8')
+content = source.read()
+
+
+## refine content
+## 1. replace '\n': using replace(old, new, count)
+content = content.replace('\n','')
+content_list = content.split('.')
+## content_list = ['dddddd ddddddd ssss','sss']
+
+
+part_num = 1
+part_len = 100
+while (part_num-1)*part_len<=len(content_list):
+    cur_content = content_list[(part_num-1)*part_len:part_num*part_len]
+    cur_content = '.'.join(cur_content)
+    file_name = "Part" + str(part_num) + ' - The Old Man And the Sea.txt'
+    cur_file = open(file_name,"w",encoding = 'utf-8')
+    cur_file.write(cur_content)
+    cur_file.close()
+    part_num+=1
+    

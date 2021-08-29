@@ -1,0 +1,12 @@
+fruit='banana'
+fruit[0] == 'b'
+
+0 is the offset from begining
+
+'a'+'b' == 'ab'
+
+
+print(s[17:21])
+Mary
+
+fruit[3:]

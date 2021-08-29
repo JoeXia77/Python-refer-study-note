@@ -1,0 +1,21 @@
+
+## to build a generator using a function:
+## use yield to output each item in this generator
+
+def infinite_sequence():
+    num = 0
+    while True:
+        yield num
+        num += 1
+
+## use this generator: call the function and iterate all items in this generator
+
+gen = infinite_sequence()
+for i in gen:
+	print(i)
+
+
+
+
+
+

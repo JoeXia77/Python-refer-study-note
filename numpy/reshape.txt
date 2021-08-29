@@ -1,0 +1,19 @@
+
+
+## Aim: reshape an ndarray
+## Method: newarr = arr.reshape(shape_info)
+## example: 
+new_nd_arr= nd_arr.reshape(tImg.shape[0]*tImg.shape[1], 3)
+
+## the total volumn of the old and new matrix should be equal
+
+
+
+
+
+
+
+
+
+
+

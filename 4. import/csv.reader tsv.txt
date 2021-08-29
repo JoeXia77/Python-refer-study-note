@@ -1,0 +1,33 @@
+
+
+## Aim: read tsv file:
+import csv
+file = open(file_path)
+csv_file = csv.reader(file, delimiter = "\t")
+
+## read the content
+## method1: content = next(csv_file)
+
+## method 2: read all using for loop
+## example:
+for row in csv_file:
+	print(row)
+
+## if you want only read part of them, use count to break
+
+
+
+
+
+
+
+
+tsv_file = open(valid_data_path)
+vaild_file = csv.reader(tsv_file, delimiter="\t")
+
+
+
+
+
+
+

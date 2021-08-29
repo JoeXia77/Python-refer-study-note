@@ -1,0 +1,22 @@
+
+
+## OrderedDict will know the sequence of put in items
+## can change sequence of items to the end
+
+from collections import OrderedDict
+
+
+
+## 1. similar to dict
+
+## new feature
+
+## del first or last inserted item:
+od.popitem(last = True)
+## last = True will pop the last inserted item
+## last = False will pop the first inserted item
+
+
+
+
+

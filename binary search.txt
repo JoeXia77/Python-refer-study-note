@@ -1,0 +1,11 @@
+
+
+from bisect import bisect_left
+## bisect_left will find where the position of the target in a array ---- while inserting it, will not influence the order of array
+index = bisect_left(array, target)
+
+
+
+
+
+

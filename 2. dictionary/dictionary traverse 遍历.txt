@@ -1,0 +1,51 @@
+
+
+
+Aim: get all the items in a diacionary
+
+dictionary have the following attribute:
+1. dic.keys()  --> for i in dic.keys()  --> get all the keys
+2. dic.values() --> similar
+3. dic.items() --> for i in dic.items() --> (key1,value1)
+								 (key2,value2)
+4. dic.items() --> for (i,j) in dic.items() --> key and value
+
+
+example:
+
+
+>>> for i in fruit.items():
+	print(i)
+
+(1, 'apple')
+(2, 'banana')
+(3, 'pear')
+(4, 'David')
+
+## if you want use for loop to loop a dictionary, you can'e del key or add key during the looping process.
+
+
+**********************************************:
+>>> for (i,j) in fruit.items():
+	print('The key is '+ str(i)+'\nThe value is '+str(j))
+	
+The key is 1
+The value is apple
+The key is 2
+The value is banana
+The key is 3
+The value is pear
+The key is 4
+The value is David
+***********************************************
+
+for i in fruit   
+equal to 
+for i in fruit.keys()
+
+
+
+
+
+
+

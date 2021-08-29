@@ -1,0 +1,13 @@
+
+Aim: to find out any part appears how many times.
+method: 
+1.
+string.count('target')
+example: a.count('ac')  --->  6
+
+2. set the start point and the end point
+a.count('se',startIndex,endIndex)   ##left close  and  right open
+example: 
+a.count('run', 0, 10) :  1
+
+

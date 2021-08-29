@@ -1,0 +1,19 @@
+
+
+
+## in some condition, want to raise an Exception
+
+if things are not right:
+	raise Exception('Say something')
+	or
+	raise except('Say something')
+
+
+
+
+
+
+
+
+
+

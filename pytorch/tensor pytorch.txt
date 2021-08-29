@@ -1,0 +1,127 @@
+
+## Aim1:create an tensor:
+
+## method 1: torch.empty(shape)
+x = torch.empty(5,3) or x = torch.empty((5,3))
+	## as it's an empty method, 
+	## the number are not initialized and just show what is in currently in memory 
+
+print(x)
+tensor([[0.0000e+00, 3.0746e-41, 0.0000e+00],
+        [0.0000e+00, 0.0000e+00, 0.0000e+00],
+        [3.5690e+16, 4.5731e-41, 3.5690e+16],
+        [4.5731e-41, 8.5199e-43, 0.0000e+00],
+        [2.8026e-45, 0.0000e+00, 3.5690e+16]])
+
+
+## method 2: torch.rand(shape, dtype) , can specify dtype if needed
+x = torch.rand((5,3))
+
+## method 3: torch.zeros(shape)
+x = torch.zeros(5, 3, dtype=torch.long)
+
+## method 4: torch.tensor(list)
+x = torch.tensor([5.5, 3])
+
+## if want a new tensor have the same settings (shape, dtype) of some previous one
+## use: torch.empty ; torch.ones_like(ori)...
+y = torch.randn_like(x) 
+--> y is the tensor of same shape and data type of x
+
+
+## Aim2: return size:
+## tensor.size()[0], tensor.size()[1]
+a.size()[0]
+--> 5
+
+## Aim3: oprations
+print(a)
+-->tensor([[0.2186, 0.2528, 0.7365, 0.4756, 0.5370],
+        [0.8594, 0.4644, 0.8130, 0.2572, 0.0158],
+        [0.1561, 0.7948, 0.6976, 0.7146, 0.8075]])
+result = a+a    ## a+a == torch.add(x,y)
+print(result)
+
+## Aim4 slice
+a[: , 1]
+
+## resize: x.view(shape)
+x = torch.randn(4, 4)
+y = x.view(16)
+z = x.view(-1, 8)  ## the size -1 is inferred from other dimensions
+
+
+## copy from an existing tensor a
+## create an empty tensor first: torch.empty(a.size())
+## copy the tensor in digit: b.copy_(a)
+## Note the post fix is 
+a = torch.ones(5)
+b = torch.empty(a.size())
+b.copy_(a)
+
+## Aim5: tensor and numpy
+## tensor --> numpy
+a = torch.ones(5)
+b = a.numpy()
+
+## numpy --> tensor
+a = np.ones(5)
+b = torch.from_numpy(a)
+--> "tensor b"
+
+
+## Aim6: use cuda for processing
+## method1: send an existing tensor to cuda
+## first defind GPU is the device we want to use:
+device = torch.device("cuda")
+## second, sent tensor to device:
+x = x.to(device)
+result = x + x
+
+## method2: create an tensor derictly on GPU:
+y = torch.ones_like(x, device = device)
+result = x+y
+
+## check if cuda is avaliable:
+if torch.cuda.is_available():
+
+
+## test time used:
+## x is stored in cpu, y is stored in gpu
+## so some calculations and 
+import time
+device = torch.device("cuda")
+x = torch.ones(5000000)
+y = torch.ones_like(x,device = device)
+count = 50
+
+s_t = time.time()
+for i in range(count):
+  x = x + x
+result_CPU = x
+print('CUP used: ',time.time() - s_t)
+
+s_t = time.time()
+for i in range(count):
+  y = y + y
+result_GPU = y
+print('GPU used: ',time.time() - s_t)
+
+-->CUP used:  0.1281464
+-->GPU used:  0.0007352
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

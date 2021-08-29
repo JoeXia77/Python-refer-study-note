@@ -1,0 +1,12 @@
+
+## aim: merge lists together
+a = [2,4,6,8]
+b = [1,3,5,7]
+
+## method: heapq, merge
+from heapq import merge
+result = merge(a, b)
+result = list(result)
+
+
+

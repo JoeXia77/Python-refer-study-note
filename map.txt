@@ -1,0 +1,26 @@
+
+
+## use a function for multiple times:
+
+a,b,c,d = map(func, iterable_item)
+
+example:
+a,b,c,d = map(str,(1,2,3,4))
+
+note: str is the name of function, '()' is not needed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

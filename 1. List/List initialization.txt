@@ -1,0 +1,25 @@
+
+Aim: generate a featured list
+method: List1 = [elementExpression for element in range(start,end,step)]
+
+Example:
+squares = [value**2 for value in range(1,11)]
+print(squares)
+
+
+
+## when I don't want some element exist in a list, I remove those element from the list 
+l1 = [2,3,4,5]
+l2 = [3,4]
+l3 = [x for x in l1 if x not in l2]
+--> l3 == [2,5]
+## l3 = [x(the target element's name is x) 
+	for (some condition, like x in range(5), like x in list3)
+	if (another condition, like x not in some list)  ]
+
+
+
+
+
+
+

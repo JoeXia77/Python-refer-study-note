@@ -1,0 +1,14 @@
+
+## use in for loop to get the index and value directly
+
+## enumerate(iterable, start=0)
+
+## example:
+for (i,num) in enumerate(a):
+    print(i,num)
+
+## principle:
+seasons = ['Spring', 'Summer', 'Fall', 'Winter']
+list(enumerate(seasons))
+[(0, 'Spring'), (1, 'Summer'), (2, 'Fall'), (3, 'Winter')]
+

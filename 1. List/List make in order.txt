@@ -1,0 +1,23 @@
+
+
+1. Aim£º reordering a list
+Method: List1.sort()
+
+
+2.Aim: return the sort but do not change the origional list
+Method: print(sorted(List1))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

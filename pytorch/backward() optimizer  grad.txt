@@ -1,0 +1,33 @@
+
+
+## import
+import torch
+import torch.nn.functional
+
+## data
+x = torch.tensor([3.0,5.0],dtype=float)
+
+## parameter
+w = torch.tensor([1,2],dtype=float)
+w.requires_grad = True
+para_list = [w]
+
+## use optimizer
+optimizer = torch.optim.Adam(para_list, lr=0.1)  
+
+## backward loss function
+## do an optimizer.step(), parameters will update
+loss = torch.matmul(w,x)
+optimizer.zero_grad()
+loss.backward()
+optimizer.step()
+print(w.grad)
+
+
+
+
+
+
+
+
+

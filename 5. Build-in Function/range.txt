@@ -1,0 +1,10 @@
+range(start,end,step)
+
+range(0,10,2)
+0
+2
+4
+6
+8
+
+include the stard but no end

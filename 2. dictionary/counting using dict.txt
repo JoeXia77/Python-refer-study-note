@@ -1,0 +1,22 @@
+
+## if you want to put a list of items into a dict and count the number of each item, this one line code if prefered
+## table[name]=1 if not in else table[name]+1
+table = {}
+for item in a List:
+	table[item] = 1 if item not in table else table[item]+1
+
+
+## OR:
+from collections import Counter
+table = Counter(targetList)
+
+
+
+
+
+
+
+
+
+
+

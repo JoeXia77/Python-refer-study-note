@@ -1,0 +1,14 @@
+
+
+
+str = '-'
+myList = ['a', 's', 'd', 'f', 'g', 'h', 'j']
+str.join(myList)
+-->'a-s-d-f-g-h-j'
+
+
+str = ''
+myList = ['a', 's', 'd', 'f', 'g', 'h', 'j']
+str.join(myList)
+-->'asdfghj'
+

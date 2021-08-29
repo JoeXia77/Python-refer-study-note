@@ -1,0 +1,23 @@
+
+在function内部修改在函数外的变量，需在函数内先声明 global variable
+if you use golbal inside a function, this global will make this variable link to the main function's variable 
+
+x = 3
+def func():
+　　global x
+　　x = 2
+func()
+运行这个函数后: x == 2
+
+## if you are using nested functions, like:
+def outer():
+	x = 3
+	nums = []
+	
+	def inner():
+
+## the inner will read values in its outer function, but it cannot change a value:
+## you cannot use x = 2 in the inner function
+## but you can use nums.append(1) to change nums, because nums is a address and this address isn't changed. (but its content changed) 
+
+

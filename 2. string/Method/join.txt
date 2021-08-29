@@ -1,0 +1,35 @@
+
+Aim: convert list to a string
+
+1. just put together, do nothing else:
+
+connector = ''
+targetList = ('I','like','to','eat','apple')
+print( connector.join(targetList) )
+
+>>>Iliketoeatapple
+
+2. put an space in each element
+
+## connector should be modified
+connector = ' '
+
+targetList = ('I','like','to','eat','apple')
+print( connector.join(targetList) )
+
+>>>I like to eat apple
+
+
+3. change to have another connector
+
+connector = '_'
+
+targetList = ('I','like','to','eat','apple')
+print( connector.join(targetList) )
+
+>>>I_like_to_eat_apple
+
+
+
+
+

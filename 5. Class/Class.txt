@@ -1,0 +1,78 @@
+
+## there are two parts in a class:
+## one is it's  attributes 
+## the other is it's methods
+
+
+## while instantiation, the __init__ mothod will be called   x = Restaurant(valueAIn__init__,valueBIn__init__)
+## self will refers to an instance
+
+class Restaurant():   ## use upper case for the name of the class
+	## now get some methods:
+	## choose to use an __init__ method for initialization
+	
+	## or you can don not use __init__ method for init
+	def __init__(self,a,b):
+		## define several attributes
+		self.rest_name = a
+		self.rest_type = b
+
+	## now get some method:
+	def ******(self,):
+		
+		
+default initialization:
+
+## better put the initial attributes into the __init__ method
+## For example:
+self.totalPower = 100
+
+
+change the attribute directly:
+myCar = Car()
+myCar.name = lalal
+myCar.Price = 10000
+
+
+Inheritance:
+
+class Car():
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+*
+class Elec_Car(##put the parent's name here):
+ex: 
+class Car():
+	def ....
+class Elec_Car(Car):
+	def ....
+
+
+Benefit: 
+1. the child can directly use all the method and attributes in the parent, without defination.
+2. the child can define some attributes or methods again to cover the parent's method.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

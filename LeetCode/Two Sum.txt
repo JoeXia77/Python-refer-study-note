@@ -1,0 +1,33 @@
+##problem: have a set of intergers. there are two sum up to be a specific interger.
+##calls this sum : target
+##so give this targer and the the set, find the two interger, return their index
+##
+##solution: tarverse the array of integers, make a subtraction of target-num1
+##find if the result exist in this set of integers.
+##use dictionary to decrease the finding time, by set the key to be result
+##
+##dicitonary function:
+##1. exist???  ---> if 33 in tDic ---> true
+##2. add value to a dictionary: 1. initialize a dictionary: tDic = {} 2. tDic[key]=value
+##
+
+##
+##1. for i in range(len(list))   |the value in range could be the length, which is len(array), no need to -1
+##2. return    | return value could be a list, like:   return [a,b,c]
+##
+##
+
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        tDic = {}
+        ##build up a dictionary where value of array are key in the dic
+        for i in range(len(nums)):
+            tDic[nums[i]] = i
+        ## find the if two elements can pair, one in array , one in dic
+        for i in range (len(nums)):
+            pair = target-nums[i]
+ 
+            if pair in tDic:
+                if tDic[pair] != i:
+                    return [i,tDic[pair]]

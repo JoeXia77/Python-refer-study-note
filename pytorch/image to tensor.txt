@@ -1,0 +1,30 @@
+## Aim: convert an image to tensor 
+## input this tensor to a neural network
+
+## processing steps:
+## Resize, Normalize, ToTensor, torch.autograd.Variable
+## Variable is a wrapper around a PyTorch Tensor, it can have x.data and x.grad
+
+import torch
+import torchvision.transforms as transforms
+from torch.autograd import Variable
+from PIL import Image
+
+## Transform an image into tensor using pytorch and PIL
+## resize image
+scaler = transforms.Resize((224, 224))
+## Normalize settings (default setting for RGB image)
+normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+##  ‘to_tensor’ will be used to convert the PIL image to a PyTorch tensor
+to_tensor = transforms.ToTensor()
+
+img = Image.open("cat.jpg")
+## or in local pc, use address: img = Image.open(r"C:\Users\xiami\OneDrive\Desktop\cat.jpg")
+t_img = Variable(normalize(to_tensor(scaler(img))).unsqueeze(0))
+
+
+## Aim: show image from tensor
+## 1. resize to three demension
+image = t_img.resize(3, 500, 500)
+## 2. show it with shifted demension
+plt.imshow(  image.permute(1, 2, 0)  )

@@ -1,0 +1,53 @@
+import numpy as np
+
+## initialize:
+arr = np.array([[1,2,3],[4,5,6],[7,8,9]])
+arr = np.zeros(length)
+
+## indexing and slicing:
+arr[0][0]
+or
+arr[0,0] == 1
+
+arr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
+arr[0:2, 1:4]
+
+
+## shape:  arr.shape  --> (rows, columns)
+arr = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+print(arr.shape)
+--> (2,4)
+
+
+## reshape  newArray = arr.reshape(4,3)     ## 4*3 == 12
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+newarr = arr.reshape(2, 3, 2)  
+
+	## Flattening 
+	the arrays, convert into 1D array:  arr.reshape(-1)
+	or
+	arr.reshape(arr.shape[0]*arr.shape[1])
+
+## to list: arr.tolist() 
+newlist = npArray.tolist()
+
+
+## matrix x plus 1 ---> each element plus 1 ---> output a new matrix
+y = x + 1
+
+##matrix x plus another matrix: ---> output a new matrix
+y = x + x
+
+
+
+
+
+
+
+
+
+
+
+
+
+

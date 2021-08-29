@@ -1,0 +1,15 @@
+import re
+
+
+## match --- re.match(pattern, string)
+
+
+
+## regular experssion:
+## if we want to find 'In'
+## 1. write some known chars: pattern = 'In'
+## if we know some thing could surrounding 'In'
+## 2. use "." to stand for any char
+##     use "*" to stand for repeating 0 or more times
+##     use "+" to stand for repeating 1 or more times
+##     so, pattern = '.*In.*'

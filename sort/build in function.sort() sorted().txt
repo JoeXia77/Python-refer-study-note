@@ -1,0 +1,71 @@
+
+if you want to sort an list
+
+## list.sort()
+the item in the list must be comparable: like int, alphabat, or turple or list:
+exapmle:
+a.sort()
+--> 
+[[1, 60],
+ [1, 100],
+ [2, 76],
+ [2, 76, 44],
+ [2, 77],
+if items are comparable, the function will compare the first position first, if tie, compare the second position
+
+
+
+## is you want to do adcanced sort: you can use sorted(target,key = ...) to achieve
+## key could be a function you can define (key = sorter), this function will take a item in the list as input and return comparable item
+## the comparable item could be int, alphabat, or turples. (for turples, compare the first number first, if tire, compare the next)
+
+
+participant_list = [
+    ('Alison', 50, 18),
+    ('Terence', 75, 12),
+    ('David', 75, 20),
+    ('Jimmy', 90, 22),
+    ('John', 45, 12)
+]
+
+def sorter(item):
+    # Since highest marks first, least error = most marks
+    error = 100 - item[1]
+    age = item[2]
+    return (error, age)
+
+sorted_list = sorted(participant_list, key=sorter)
+print(sorted_list)
+
+
+## use lambda
+
+sort a matrix:
+>>>l=[('a', 1), ('b', 2), ('c', 6), ('d', 4), ('e', 3)]
+## lambda is an simple function, same as def but simpler. after lambda is: input: output
+## in this case, x is input and x[0] is output
+>>>sorted(l, key=lambda x:x[0])
+
+Out[39]: [('a', 1), ('b', 2), ('c', 6), ('d', 4), ('e', 3)]
+
+>>>sorted(l, key=lambda x:x[0], reverse=True)
+Out[40]: [('e', 3), ('d', 4), ('c', 6), ('b', 2), ('a', 1)]
+>>>sorted(l, key=lambda x:x[1])
+Out[41]: [('a', 1), ('b', 2), ('e', 3), ('d', 4), ('c', 6)]
+>>>sorted(l, key=lambda x:x[1], reverse=True)
+Out[42]: [('c', 6), ('d', 4), ('e', 3), ('b', 2), ('a', 1)]
+
+
+## reverse:
+sorted(target, reverse = True)
+
+
+
+
+
+
+
+
+
+
+

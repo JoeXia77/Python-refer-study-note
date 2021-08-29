@@ -1,0 +1,27 @@
+
+
+use golbal variable in a function:
+
+part 1:
+set an golbal variable out side the function
+
+
+part 2:
+inside the function:
+global a
+a = 'something in this function'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

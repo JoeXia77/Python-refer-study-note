@@ -1,0 +1,13 @@
+
+
+import numpy as np
+M = np.genfromtxt('./monks-1.train', missing_values=0, skip_header=0, delimiter=',', dtype=int)
+ytrn = M[: , 0]
+Xtrn = M[: , 1:]
+
+
+
+
+
+
+

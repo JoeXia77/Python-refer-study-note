@@ -1,0 +1,11 @@
+
+## aim: write variable into local file system
+
+## open file in google drive
+f = open("drive/My Drive/output.txt","w")  
+
+## write something and f.close()
+f.write('1234')
+f.close()
+
+

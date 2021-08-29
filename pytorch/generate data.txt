@@ -1,0 +1,15 @@
+
+## generate 1000 numbers start from 0 and end at 30
+## use torch.linspace(start, end, steps)
+x = torch.linspace(0,30,1000)
+
+
+
+
+
+
+
+
+
+
+

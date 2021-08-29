@@ -1,0 +1,38 @@
+
+want to read some iterable and control the read step:
+
+1. find a iterator
+a = iter([1,2,3])
+a = iter({1:'a',2:'b'})
+
+2. use next to read
+print(next(a))
+print(next(a))
+
+3. to avoid running out item, can return a default value when running out:
+next(a,default_val)
+print(next(a),-1)
+print(next(a),-1)
+print(next(a),-1)
+	## it will return -1 while empty
+
+4. reverse reading sequence
+## can use reversed to reverse an iterable
+a = iter(reversed(a))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

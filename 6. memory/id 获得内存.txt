@@ -1,0 +1,12 @@
+>>> id(3)
+134882108
+
+>>>a = 'runoob'
+>>> id(a)
+4531887632
+
+
+Every value has an id, which is a unique number related to where it is stored in
+the memory of the computer.
+
+

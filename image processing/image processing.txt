@@ -1,0 +1,28 @@
+
+
+from matplotlib import pyplot as io
+import numpy as np
+
+## matplotlib.pyplot.imread can read an image to an array
+## which is np.array[768-1][1024-1][3-1]
+
+imgArray = io.imread(filePath)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

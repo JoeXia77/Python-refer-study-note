@@ -1,0 +1,13 @@
+
+## evaluate your prediction, I give 10 answers and 8 of them are right
+precision = tp / (tp+fp)
+    
+## recall: pick the right thing from the real data pool
+recall = tp / (tp+fn)
+        
+
+fMeasure = 2 * ( (precision*recall) / (precision+recall) )
+
+
+
+

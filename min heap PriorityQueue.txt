@@ -1,0 +1,44 @@
+## the PriorityQueue will always record the min content or record the elements with min priority number, like (1, 'my_element')
+
+from queue import PriorityQueue
+q = PriorityQueue()
+
+## input element: the element to put could be a turple, like: 
+			(priority_number, element), and get method will get element according to the priority Number
+q.put(element)
+
+## get() will remove and get min element
+result = q.get()
+
+
+## check empty
+q.empty() --> True or False
+
+## get all objects in a queue
+q.queue  ## return all objects
+or
+q.queue[0]  ## return some object
+
+
+
+
+## heapq
+## use heappush and heappop to modify an existing list
+
+## example:
+from heapq import heappush, heappop
+queue = list()
+heappush(queue,3)
+...
+heappop()
+
+
+
+
+
+
+
+
+
+
+

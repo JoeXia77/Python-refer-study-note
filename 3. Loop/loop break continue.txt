@@ -1,0 +1,15 @@
+
+
+break can break one loop near it
+
+continue will pass the unwanted lines under it and continue to loop.
+
+
+
+
+
+
+
+
+
+

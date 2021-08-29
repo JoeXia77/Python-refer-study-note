@@ -1,0 +1,27 @@
+
+pop  delete a element and return its value
+
+1. 删除最后一个
+list1.pop()   ##will delete the last element and return this element.
+
+2. 根据index删除某一个，并返回值。
+list1.pop(index)
+example:
+list1.pop(0)        
+or
+list1.pop(1)
+
+
+## insert(index,obj)
+
+example:
+list1.insert(toSomeIndex, withSomeObject)
+
+
+
+
+
+
+
+
+

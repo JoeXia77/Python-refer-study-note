@@ -1,0 +1,28 @@
+
+## 1. save model
+## define where to save
+checkpoint_path = "training_1/cp.ckpt"
+## use saving tool: tf.keras.callbacks.ModelCheckpoint, which will automatically record the model weights while using .fit()
+## example: 
+cp_callback = tf.keras.callbacks.ModelCheckpoint(filepath=checkpoint_path,
+                                                 save_weights_only=True,
+                                                 verbose=1)
+
+
+## 2. load model
+model.load_weights(checkpoint_path)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

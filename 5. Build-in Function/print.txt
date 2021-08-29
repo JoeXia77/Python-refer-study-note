@@ -1,0 +1,20 @@
+>>> print(1)  
+1  
+
+>>> print("Hello World")  
+Hello World 
+
+格式化输出  format output
+
+输出内容
+"asdfggg%s333333333333%d" %('LOVE',999)
+print("asdfggg%s333333333333%d" %('LOVE',999))
+>>>asdfgggLOVE333333333333999
+
+
+
+>>>str = "the length of (%s) is %d" %('runoob',len('runoob'))
+>>> print(str)
+the length of (runoob) is 6
+
+
